@@ -13,7 +13,11 @@ function MoveChangeObjectSize(objectStyleName, changeWidth) {
 		doc.viewPreferences.horizontalMeasurementUnits = MeasurementUnits.PICAS;
 		doc.viewPreferences.verticalMeasurementUnits = MeasurementUnits.PICAS;
 		
-		// TODO: fill out logic of finding objects, moving and changing sizes
+		// TODO: fill out logic of finding objects, moving and changing widths
+		app.findObjectPreference.appliedObjectsStyles = objectStyleName[i];
+		var foundObjects = doc.findObject();
+
+		// TODO: Look through found objects and change position/width
 	}
 
 }
