@@ -18,6 +18,13 @@ function MoveChangeObjectSize(objectStyleName, changeWidth) {
 		var foundObjects = doc.findObject();
 
 		// TODO: Look through found objects and change position/width
+		for (j = 0; j < foundObjects.length; j++) {
+			frame = foundObjects[i];
+			frame.move([X_Index, Y_Index]);
+			gb = frame.geometricBounds;
+
+
+		}
 	}
 
 }
