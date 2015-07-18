@@ -23,8 +23,7 @@ function MoveChangeObjectSize(objectStyleName, changeWidth) {
 			frame.move([X_Index, Y_Index]);
 			gb = frame.geometricBounds;
 
-
+			frame.geometricBounds = [gb[0], gb[1], gb[2], gb[1]+changeWidth[i]];
 		}
 	}
-
 }
